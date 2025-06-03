@@ -45,6 +45,7 @@ export const Contact = () => {
       );
 
       const result = await response.json();
+
       if (result.success === "true") {
         toast.success("Mensagem enviada com sucesso!");
         setFormData({ name: "", email: "", message: "" });
@@ -197,7 +198,7 @@ export const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0"
+                  className="cursor-pointer w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0"
                 >
                   <Send size={16} className="mr-2" />
                   Enviar
