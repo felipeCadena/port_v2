@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Felipe Cadena | Desenvolvedor",
+  title: "Cadena Code | Desenvolvedor",
   description: "Portfólio",
 };
 

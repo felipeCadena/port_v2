@@ -31,6 +31,15 @@ export const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error("Por favor, preencha todos os campos.");
+      return;
+    }
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      toast.error("Por favor, insira um e-mail válido.");
+      return;
+    }
+
     try {
       const response = await fetch(
         "https://formsubmit.co/ajax/felipecadena.dev@gmail.com",
@@ -47,7 +56,9 @@ export const Contact = () => {
       const result = await response.json();
 
       if (result.success === "true") {
-        toast.success("Mensagem enviada com sucesso!");
+        toast.dark("Mensagem enviada com sucesso!", {
+          className: "bg-gradient-to-r from-purple-400 to-pink-400",
+        });
         setFormData({ name: "", email: "", message: "" });
       } else {
         toast.error("Erro ao enviar. Tente novamente.");

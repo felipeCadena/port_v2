@@ -8,9 +8,9 @@ export const Projects = () => {
     {
       title: "B2 Adventure",
       description:
-        "Plataforma que conecta pessoas aventureiras a guias qualificados para realização de aventuras ao ar livre, com agendamento e pagamento pela plataforma.",
+        "Plataforma que conecta pessoas aventureiras a guias qualificados para realização de aventuras ao ar livre, com agendamento e pagamento pela plataforma. Neste projeto atuei como Front-end",
       image: "/projects/b2.png",
-      technologies: ["Next.js", "Node.js", "MySQL", "Asaas"],
+      technologies: ["Next.js", "Zustand", "Tailwind", "React Query"],
       live: "https://www.b2adventure.com/",
     },
     {
@@ -25,14 +25,14 @@ export const Projects = () => {
       title: "123Projetei Business",
       description:
         "Sistema de contratação de Projetos de construção civil da 123Projetei. Neste projeto fizemos a manutenção e criação de novos features envolvendo tanto Front-end como Back-end.",
-      image: "/projects/123ecom.png",
+      image: "/projects/business.png",
       technologies: ["Next.js", "Node.js", "MySQL", "Tailwind", "Pagarme"],
       live: "https://business.123projetei.com/",
     },
     {
       title: "Admin 123Projetei",
       description:
-        "Sistema administrativo. Aqui há integração com quase todas as aplicações da empresa. Os SDRs podiam criar orçamentos personalizados, projetos do 123Projetei Business ou projetos especiais. É possivel criar promoções, acompanhar as vendas e criar novos projetos para o E-commerce da 123Projetei. Neste projeto fizemos a manutenção e criação de novos features envolvendo tanto Front-end como Back-end.",
+        "Sistema administrativo. Aqui há integração com quase todas as aplicações da empresa. Os SDRs podem criar orçamentos personalizados, projetos do 123Projetei Business ou projetos especiais. É possivel criar promoções, acompanhar as vendas e criar novos projetos para o E-commerce da 123Projetei. Neste projeto fizemos a manutenção e criação de novos features envolvendo tanto Front-end como Back-end.",
       image: "/projects/admin.png",
       technologies: ["Next.js", "Node.js", "MySQL", "Tailwind", "Asaas"],
       live: "https://admin.123projetei.com/",
